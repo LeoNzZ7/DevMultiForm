@@ -1,11 +1,9 @@
-import * as c from './App.styles'
+import { Router } from './Routes/router';
 
 const App = () => {
   return (
-    <c.Container>
-
-    </c.Container>
-  )
+      <Router />
+  );
 }
 
 export default App;
