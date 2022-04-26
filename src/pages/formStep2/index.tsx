@@ -11,14 +11,14 @@ export const FormStep2 = () => {
 
     const handleNextStep = () => {
         if(state.name !== '') {
-            navigate('/step3')
+            navigate('/step3');
         } else {
-            alert('Preencha os dados necessarios para proseguir')
+            alert('Preencha os dados necessarios para proseguir');
         }
     };
 
     const handlePrevStep = () => {
-        navigate('/')
+        navigate('/');
     };
 
     const setLevel = (level: number) => {
@@ -30,7 +30,7 @@ export const FormStep2 = () => {
 
     useEffect(() => {
         if(state.name === '') {
-            navigate('/')
+            navigate('/');
         } else {
         dispatch({
             type: FormActions.setCurrentStep,

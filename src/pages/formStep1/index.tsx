@@ -10,9 +10,9 @@ export const FormStep1 = () => {
 
     const handleNextStep = () => {
         if(state.name !== '') {
-            navigate('/step2')
+            navigate('/step2');
         } else {
-            alert('Preencha os dados necessarios para proseguir')
+            alert('Preencha os dados necessarios para proseguir');
         }
     };
 

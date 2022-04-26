@@ -23,20 +23,20 @@ export const FormStep3 = () => {
     };
 
     const handlePrevStep = () => {
-        navigate('/step2')
+        navigate('/step2');
     };
     const handleNextStep = () => {
-        if(state.name !== '' && state.gitHub !== '') {
-            alert('Finalizado')
+        if(state.name !== '' && state.gitHub !== '' && state.name !== '') {
+            navigate('/stepfinish')
         } else {
-            alert('Preencha todos os dados para finalizar cadastro')
+            alert('Preencha todos os dados para finalizar cadastro');
         }
     };
 
     useEffect(() => {
         dispatch({
             type: FormActions.setCurrentStep,
-            payload: 1
+            payload: 3
         });
     }, []);
 
