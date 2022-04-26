@@ -36,8 +36,9 @@ export const Container = styled.div`
     };
 
     .backButton {
-        padding: 20px 40px;
-        font-size: 14px;
+        padding: 20px 0px;
+        padding-right: 20px;
+        font-size: 16px;
         background-color: transparent;
 
         &:hover {
